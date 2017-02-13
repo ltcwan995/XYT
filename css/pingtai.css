@@ -1,0 +1,340 @@
+/* 
+* @Author: Marte
+* @Date:   2016-10-05 08:49:27
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-06 15:32:49
+*/
+.banxin{
+    width: 1000px;
+    margin:0 auto;
+}
+.head{
+    min-width: 1000px;
+    height: 80px;
+    border-bottom:2px solid #2582d0;
+    position:relative;
+}
+.head img{
+    position:absolute;
+    top: 20px;
+    left: 30px;
+} 
+.head h2{
+    position:absolute;
+    top:8px;
+    left:80px;
+}
+.zh{
+    position:absolute;
+    top:55px;
+    left:850px;
+}
+.zh a{
+   text-decoration: none;
+   color:#6eb4db;
+   position:relative;
+   left:-50px;
+}
+.zc{
+    position:absolute;
+    top:100px;
+    min-width:998px;
+    height:320px;
+    background:url(../img/banner.jpg) no-repeat;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+.yx{
+    width:300px;
+    height: 268px;
+    position:absolute;
+    top:30px;
+    left:20px;
+}
+.yx input[type=text]{
+    width:236px;
+    height: 36px;
+    padding-left: 10px;
+    position:absolute;
+    top:40px;
+    left:20px;
+}
+.yx input[type=password]{
+    width:236px;
+    height: 36px;
+    padding-left: 10px;
+    position:absolute;
+    top:100px;
+    left:20px;
+}
+.yx input[type=submit]{
+    width: 100px;
+    height: 33px;
+    background:#a6c659;
+    cursor:pointer;
+     position:absolute;
+    top:165px;
+    left:95px;
+    color:white;
+    line-height: 33px;
+    text-align: center;
+    padding-left: 10px;
+}
+.yx a{
+    text-decoration: none;
+    color:#a6c659;
+    position:absolute;
+    top:200px;
+    left:10px;
+}
+.fenlei{
+    position:absolute;
+    top:420px;
+    min-width:998px;
+    height:486px;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+.fenlei-top{
+    position:absolute;
+    top:25px;
+    left:18px;
+    width: 962px;
+    height: 43px;
+    background:#f0f0f0;
+    border-radius: 5px;
+    color:#333333;
+    padding-left:10px;
+    line-height: 43px;
+}
+.fenlei-center{
+    width: 996px;
+    height: 191px;
+    position:absolute;
+    top:60px;
+    left:-8px;
+    border-bottom: 1px solid #eeeeee;
+}
+.fenlei-center ul li{
+    display: inline-block;
+    width:310px;
+    height:170px;
+    float: left;
+    margin:2px;
+    position:relative;
+    top:-8px;
+}
+.fenlei-center ul>li h4{
+   position:absolute;
+   left:135px;
+}
+.fenlei-center ul>li a{
+    display:inline-block;
+    width: 186px;
+    height: 93px;
+    text-decoration: none;
+    color:#999999;
+    position:absolute;
+    top:60px;
+    font:13px "微软雅黑";
+    left:120px;
+}
+.fenlei-center ul>li:nth-child(1),.fenlei-center ul>li:nth-child(2){
+    border-right: 1px solid #dddddd;
+}
+.fenlei-center ul>li span{
+    display:inline-block;
+    width:100px;
+    height: 115px;
+    /*background:red;*/
+    position:absolute;
+    top:20px;
+    left:10px;
+}
+.fenlei-center ul>li #one{
+    background:url(../img/accounts.png) no-repeat 0 0;
+}
+.fenlei-center ul>li #two{
+    background:url(../img/accounts.png) no-repeat 0 -130px;
+}
+.fenlei-center ul>li #three{
+    background:url(../img/accounts.png) no-repeat 0 -261px;
+}
+.fenlei-center ul>li a:hover{
+    text-decoration: underline;
+}
+.fenlei-bottom{
+    width: 996px;
+    height:234px;
+    position:absolute;
+    top:200px;
+    left:-8px;
+}
+.fenlei-bottom ul li{
+    display: inline-block;
+    width:310px;
+    height:197px;
+    float: left;
+    margin:2px;
+    position:relative;
+    top:-8px;
+}
+.fenlei-bottom ul li:nth-child(1){
+    background:url(../img/cardbg.png) no-repeat 0 0;
+}
+.fenlei-bottom ul li:nth-child(2){
+    background:url(../img/cardbg.png) no-repeat -330px 0;
+}
+.fenlei-bottom ul li:nth-child(3){
+    background:url(../img/cardbg.png) no-repeat 0 0;
+}
+.fenlei-bottom ul li h4{
+    position:absolute;
+    top:68px;
+    color:white;
+}
+.fenlei-bottom ul li  a{
+    display:inline-block;
+    width: 220px;
+    height: 57px;
+    position:absolute;
+    top:125px;
+    left:60px;
+}
+.zhinan{
+    position:relative;
+    top:55px;
+    left:850px;
+    width:998px;
+    height:231px;
+    top:815px;
+    left:1px;
+    border-top:1px solid #dddddd;
+    border-left:1px solid #dddddd;
+    border-right:1px solid #dddddd;
+}
+.zhinan-top{
+    position:absolute;
+    top:25px;
+    left:18px;
+    width: 962px;
+    height: 43px;
+    background:#f0f0f0;
+    border-radius: 5px;
+    color:#333333;
+    padding-left:10px;
+    line-height: 43px;
+} 
+.zhinan ul li{
+   display: inline-block;
+    width:310px;
+    height:150px;
+    float: left;
+    margin:2px;
+    position:relative;
+    top:60px;
+}
+.zhinan-center ul li span{
+    display:inline-block;
+    width:146px;
+    height:130px;
+    position:absolute;
+    top:16px;
+    left:80px;
+}
+.zhinan-center ul li .first{
+    background:url(../img/flow.png) no-repeat -100px 0;
+}
+.zhinan-center ul li .second{
+    background:url(../img/flow.png) no-repeat -417px 0;
+}
+.zhinan-center ul li .third{
+    background:url(../img/flow.png) no-repeat -751px 0;
+}
+.anli{
+    position:relative;
+    top:55px;
+    left:850px;
+    width:998px;
+    height:508px;
+    top:818px;
+    left:1px;
+    border-top:1px solid #dddddd;
+    border-left:1px solid #dddddd;
+    border-right:1px solid #dddddd;
+}
+.anli-top{
+    position:absolute;
+    top:25px;
+    left:18px;
+    width: 962px;
+    height: 43px;
+    background:#f0f0f0;
+    border-radius: 5px;
+    color:#333333;
+    padding-left:10px;
+    line-height: 43px;
+} 
+.anli-center ul li{
+   display: inline-block;
+    width:90px;
+    height:90px;
+    float: left;
+    margin:45px;
+    position:relative;
+    top:45px;
+    opacity:0.5;
+}
+.anli-center ul li:hover{
+    opacity:1;
+}
+.anli-center ul li span{
+    position:absolute;
+    top:100px;
+    left:25px;
+    color:#333333;
+
+}
+.anli-center ul .one{
+    background:url(../img/icon1.png) no-repeat;
+}
+.anli-center ul .two{
+    background:url(../img/icon2.png) no-repeat;
+}
+.anli-center ul .three{
+    background:url(../img/icon3.png) no-repeat;
+}
+.anli-center ul .four{
+    background:url(../img/icon4.png) no-repeat;
+}
+.anli-center ul .five{
+    background:url(../img/icon3.png) no-repeat;
+}
+.anli-center ul li:hover{
+    border:1px solid #70b93e;
+}
+.anli-word{
+    width: 962px;
+    height: 225px;
+    position:relative;
+    top:600px;
+    left:20px;
+    /*overflow: hidden;*/
+}
+.anli-word ul{
+    display:inline-block;
+    width: 900px;
+    height: 225px;
+    position:absolute;
+    overflow:hidden;
+}
+.anli-word ul li{
+    display:inline-block;
+    width: 900px;
+    height: 225px;
+    position:relative;
+    color:black;
+    padding-top:20px;
+}
+
+

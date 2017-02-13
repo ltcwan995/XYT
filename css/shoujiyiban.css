@@ -1,0 +1,332 @@
+/* 
+* @Author: Marte
+* @Date:   2016-10-08 08:51:43
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-13 09:04:53
+*/
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    overflow-x:hidden ;
+}
+body :not(#download){
+    opacity:0;
+}
+.banxin{
+    width: 1000px;
+    margin:0 auto;
+}
+.heade{
+    background:#ebf8ff;
+    width:100%;
+    height:650px;
+    clear: both;
+}
+.Img{
+    width: 97px;
+    height: 55px;
+    background:url(../img/mobile_img01.gif) no-repeat;
+    position:absolute;
+    top: 20px;
+    left:100px;
+}
+.nav{
+    width:1000px;
+    height:650px;
+    background: url(../img/interface.png) no-repeat;
+    position:relative;
+    top:-650px;
+}
+.dh{
+      list-style: none;
+      position:absolute;
+      left:650px;
+      top:30px;  
+}
+.dh li{
+    float: left;
+    text-decoration: none;
+    padding:10px;
+}
+.dh li a{
+    text-decoration: none;
+    color: #333333;
+    display: inline-block;
+    width:80px;
+    height:15px;
+    line-height:15px;
+    text-align: center;
+}
+.dh li a:hover{
+    color:#37c2ff;
+    border-bottom:2px solid #37c2ff;
+}
+h1{
+    color:#37c2ff;
+    position:absolute;
+    top:190px;
+    left:700px;
+}
+.nav p{
+    width:300px;
+    height:60px;
+    position:absolute;
+    top:290px;
+    left:700px;
+    color:#333333;
+    font: 700 20px "微软雅黑";
+}
+.xiazai{
+    display:inline-block;
+    width: 200px;
+    height:40px;
+    line-height:40px;
+    text-decoration: none;
+    text-align: center;
+    background:#37c2ff;
+    color:white;
+    padding-top: 10px;
+    font:20px "微软雅黑";
+    position:absolute;
+    top:400px;
+    left:700px;
+    border-radius: 5px;
+}
+.xiazai:hover{
+    background:#2076b2;
+}
+.nav01{
+    width:1000px;
+    height:650px;
+    background: url(../img/school_relation.png) no-repeat;
+    position:relative;
+    top:-550px;
+    left:290px;
+}
+.nav01 p{
+    width:300px;
+    height:60px;
+    position:absolute;
+    font-size: 16px;
+    color: #777777;
+    line-height: 1.5;
+    top:250px;
+    left:-200px;
+}
+.nav01 span{
+    font-size: 36px;
+    display: block;
+    padding-bottom: 40px;
+    color: rgb(51, 51, 51);
+    font-family: 幼圆, 微软雅黑, Arial, Helvetica, sans-serif;
+    position:absolute;
+   top:180px;
+    left:-200px;
+}
+.nav02{
+    width:1000px;
+    height:650px;
+    background: url(../img/school_application.png) no-repeat;
+    position:relative;
+    top:-600px;
+    left:-30px;
+}
+.nav02 p{
+    width:300px;
+    height:60px;
+    position:absolute;
+    font-size: 16px;
+    color: #777777;
+    line-height: 1.5;
+    top:250px;
+    left:700px;
+}
+.nav02 span{
+    font-size: 36px;
+    display: block;
+    padding-bottom: 40px;
+    color: rgb(51, 51, 51);
+    font-family: 幼圆, 微软雅黑, Arial, Helvetica, sans-serif;
+    position:absolute;
+   top:180px;
+    left:700px;
+}
+.nav03{
+    width:1000px;
+    height:650px;
+    background: url(../img/school_define.png) no-repeat;
+    position:relative;
+    top:60px;
+    left:-30px;
+}
+.nav03 p{
+    width:300px;
+    height:60px;
+    position:absolute;
+    font-size: 16px;
+    color: #777777;
+    line-height: 1.5;
+    top:250px;
+    left:700px;
+}
+.nav03 span{
+    font-size: 36px;
+    display: block;
+    padding-bottom: 40px;
+    color: rgb(51, 51, 51);
+    font-family: 幼圆, 微软雅黑, Arial, Helvetica, sans-serif;
+    position:absolute;
+   top:180px;
+    left:700px;
+}
+#download-iphone{
+    width:400px;
+    height:400px;
+    position:relative;
+    top:100px;
+    left:70px;
+}
+#download-iphone a{
+    display:inline-block;
+    width: 360px;
+    height: 90px;
+    background:url(../img/mobile_img04.gif) no-repeat;
+    position:absolute;
+    top:40px;
+    left:20px;
+    padding-left:24px;
+    line-height: 90px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: #222222;
+}
+#download-iphone a:hover{
+    background:url(../img/mobile_img03.gif) no-repeat;
+    color:white;
+}
+#download-android-qrcode{
+    position:absolute;
+    top:200px;
+}
+#download-android-qrcode p{
+    color: #333333;
+    font-size: 18px;
+    line-height: 2;
+}
+#download-android{
+    width:400px;
+    height:400px;
+    position:relative;
+    top:-300px;
+    left:550px;
+}
+#download-android a{
+    display:inline-block;
+    width: 360px;
+    height: 90px;
+    background:url(../img/mobile_img05.gif) no-repeat;
+    position:absolute;
+    top:40px;
+    left:20px;
+    padding-left:24px;
+    line-height: 90px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: #222222;
+}
+#download-android a:hover{
+    background:url(../img/mobile_img06.gif) no-repeat;
+    color:white;
+}
+#download-iphone-qrcode{
+     position:absolute;
+    top:200px;
+}
+#download-iphone-qrcode p{
+    color: #333333;
+    font-size: 18px;
+    line-height: 2;
+}
+.tieshi{
+    position:absolute;
+    top:700px;
+    left:-550px;
+}
+.tieshi .img{
+    width: 100px;
+    height: 38px;
+    background:url(../img/note.png) no-repeat;
+}
+.tieshi ul{
+    position:relative;
+    top:30px;
+    left:25px;
+}
+.tieshi ul li{
+    color: #999999;
+    font-size: 18px;
+    line-height: 2
+}
+.copy{
+    width:450px;
+    height:30px;
+    position:absolute;
+    top:900px;
+    left:-200px;
+    font-size: 12px;
+    color: #90a4ae;
+}
+#download{
+    width: 77px;
+    height:83px;
+    margin:-3100px 650px;
+    z-index:10000;
+    position:absolute;
+    background:url(../img/jz.gif) no-repeat;
+    opacity:1!important;
+}
+.mobile-store{
+    width:99px;
+    height:26px;
+    background:url(../img/xz.png) no-repeat;
+    position:fixed;
+    top:600px;
+    right: 20px;
+    display:none;
+}
+.erweima{
+    width:400px;
+    height:400px;
+    background:skyblue;
+    position:fixed;
+    top:300px;
+    left:600px;
+    z-index: 600;
+    display:none;
+}
+.erweima img{
+    position:absolute;
+    top:30px;
+    left:50px;
+}
+.erweima span{
+    display:block;
+    position:absolute;
+    width:200px;
+    height:20px;
+    top:350px;
+    left:140px;
+}
+.erweima .close{
+    width:20px;
+    height:20px;
+    text-align: center;
+    position:absolute;
+    right:0;
+    cursor:pointer;
+}
+

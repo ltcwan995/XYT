@@ -1,0 +1,209 @@
+.banxin{
+	position: relative;
+	width:1024px;
+	margin: 0 auto;
+}
+.nav .logo{
+	width: 156px;
+	height: 156px;
+	z-index: 2;
+	position: relative;
+	top: 100px;
+}
+.nav .logo img{
+    border-radius: 50%;
+    border: solid 3px #fff;
+    background-color: #fff;
+}
+.nav{
+	width: 100%;
+	height:200px;
+}
+.nav .banner img{
+	width: 100%;
+	height: 200px;
+}
+.nav .banner{
+	position: relative;
+	top:-175px;
+     left:-88px;
+     height: 200px;
+	width: 1194px;
+}
+.notice h3{
+	width:780px;
+	height: 13px;
+	position: relative;
+	top:90px;
+	left:-70px;
+	padding-bottom: 7px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e5e7ea;
+}
+.notice h3 em{
+	margin-left: 12px;
+    vertical-align: bottom;
+    color: #d2d8dc;
+}
+.notice h3 span{
+	display: block;
+	position:relative;
+	left:200px;
+}
+.notice h3 a{
+	position: relative;
+    color: #00A5ED;
+    right:-540px;
+}
+.topics{
+	position: relative;
+	width:708px;
+	top:10px;
+	left:80px;
+}
+.topics h4{
+	width:600px;
+	position: relative;
+	top:-10px;
+	border-left: 4px solid #cfd8dc;
+}
+.topics .detail{
+	width: 550px;
+	height: 50px;
+	font-size: 12px;
+    line-height: 20px;
+}
+.topics .detail a{
+	display: block;
+	width:670px;
+	height: 50px;
+	transition: all .2s ease-in-out;
+}
+.time{
+	margin-top: 20px;
+	height: auto;
+    color: #bbc3cc;
+    line-height: normal;
+}
+.xiong{
+	position: relative;
+	top: 100px;
+	left:-60px;
+	/*background: url(../images/masonry_loading_1.gif);*/
+}
+.section ul li{
+	margin-bottom:5px;
+	height:150px;
+}
+.active{
+	position: relative;
+	top: 15px;
+}
+.active h3{
+	width:780px;
+	height: 13px;
+	position: relative;
+	top:90px;
+	left:-70px;
+	padding-bottom: 7px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e5e7ea;
+}
+.active h3 em{
+	margin-left: 12px;
+    vertical-align: bottom;
+    color: #d2d8dc;
+}
+.active h3 span{
+	display: block;
+	position:relative;
+	left:200px;
+}
+.active h3 a{
+	position: relative;
+    color: #00A5ED;
+    right:-556px;
+}
+.section01 ul li{
+	position: relative;
+	top:100px;
+	padding: 10px;
+	color: #324f68;
+	font-size: 14px;
+	font-weight:200;
+	margin-left:20px;
+}
+.section01 ul li a{
+	border-left: 4px solid #cfd8dc;
+}
+.section01 .one{
+	margin-left:-90px;
+	float: left;
+}
+.section01 .two{
+	margin-left:-34px;
+	float: left;
+}
+.collection h3{
+	width:850px;
+	height: 13px;
+	position: relative;
+	top:-100px;
+	left:30px;
+	padding-bottom: 10px;
+	padding-bottom: 7px;
+    margin-bottom:-75px;
+    border-bottom: 2px solid #e5e7ea;
+}
+.collection h3 em{
+	margin-left: 12px;
+    vertical-align: bottom;
+    color: #d2d8dc;
+}
+.collection h3 span{
+	display: block;
+	position:relative;
+	left:200px;
+}
+.collection h3 a{
+	position: relative;
+    color: #00A5ED;
+    right:-612px;
+}
+/*文字滚动开始*/
+#box_title{
+	position: absolute;
+	top: 237px;
+	right:-169px;
+}
+#con{
+	position: absolute;
+	top: -400px;
+	right:-435px;
+}
+.zz{
+	color: black;
+}
+/*日期时间盒子*/
+#box{
+	width: 200px;
+	height: 30px;
+	line-height:30px;
+	text-align: center;
+	position: relative;
+	font-size:16px;
+	font-weight:400;
+	top:-355px;
+	left:850px;
+	color: white;
+}
+.box1{
+	width: 200px;
+	height: 30px;
+}
+/*footer结束*/
+.yiban-footer{
+	position:absolute;
+	margin-bottom: 100px;
+	left: 400px;
+}

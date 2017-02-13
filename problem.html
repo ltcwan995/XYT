@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+body{margin:0; padding:0; height:2000px;}
+</style>
+<!-- 引入开始 -->
+<link rel="stylesheet" href="css/weishequ.css" />
+        <link rel="icon" href="favicon.ico" />
+        <script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+        <script type="text/javascript" src="js/weishequ.js" ></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/public_index.css" />
+<style type="text/css">
+.box_os .os_x, .box_os .osqq, .ico_os, .ico_gt, .ico_pp, .osqq .qq{ background:url(img/kf.gif) no-repeat;}
+.box_os{ height:auto; overflow:hidden; width:131px; position:fixed; right:0; top:220px; _position:absolute; z-index:9999;display:none;}
+.box_os .os_x{ background-color:#f7f7f7; background-position:2px 2px; width:18px; height:20px; float:right; display:inline; cursor:pointer;}
+.box_os .osqq{ width:129px; border:1px solid #D1D1D1; background-color:#fff; background-position:0 -120px; clear:both; padding:37px 0 8px 0; text-align:center;}
+.box_os .osqq p{ height:auto; line-height:20px;width:129px; margin-top:8px;}
+.box_os .osqq p strong{ color:#666;}
+.box_os .osqq img{ padding:7px 0 3px 0;}
+.box_os .osqq p em{ color:#999; display:block;}
+.box_os .osqq p span{ color:#547816; display:block;}
+.box_os .osqq .qq{ background-position:-140px -120px; display:block; width:99px; height:26px; margin:0 auto; margin-top:8px; cursor:pointer;}
+.acbox{ width:130px; overflow:hidden;}
+.acbox .ico_gt{ background-position:-60px 0; border:1px solid #299ec0; border-top:0; cursor:pointer; width:60px; height:33px; float:right;}
+.acbox .ico_pp{ background-position:-60px -60px; border:1px solid #81b140; border-top:0; cursor:pointer; width:60px; height:33px; float:right; margin:0 2px;}
+.onlineService{ background:none; display:none; width:39px; width:84px; height:178px; ;position:fixed; right:0; top:210px; _position:absolute;}
+.onlineService .ico_os{ background-position:-2px -20px; border:1px solid #c7c7c7; cursor:pointer; width:39px; height:98px; float:right;}
+.onlineService .ico_gt{ background-position:right 0; border:1px solid #299ec0; cursor:pointer; width:39px; height:37px; float:right; clear:both;}
+.onlineService .ico_pp{ background-position:right -60px; border:1px solid #81b140; cursor:pointer; width:39px; height:37px; float:right; margin:0 0 1px 0; clear:both;}
+.box_os .osqq p span a{color:#557917;}
+</style>
+<script src="js/feedback_util.js"></script>
+<!-- 引入结束 -->
+</head>	
+<body>
+
+<!-- 代码开始 -->
+<div class="box_os">
+	<div class="os_x"></div>
+    <div class="osqq">
+    <p><em>(工作日：9:30-18:30)</em></p>
+    	<p><strong>在线QQ</strong></p>
+        <p id="ico_onlineqq" class="qq"></p>
+        <p><strong>客服电话</strong><span>0775-0000000</span><span>0775-0000000</span></p>
+        <p><strong>校园总代理代理</strong><span>0775-000000-0000</span></p>
+        <p><strong>微博</strong><span><a href="index.html" target="_blank">返回首页</a></span></p>
+    </div>
+    <div class="acbox">
+    	<a class="ico_pp" onclick="FeedbackUtil.feed('index.html');" href="javascript:void(0);" title=""></a>
+        <a class="ico_gt" href="#" target="_self" title=""></a>
+    </div>
+</div>
+<div class="onlineService">
+	<p class="ico_os"></p>
+    <a class="ico_pp" onclick="FeedbackUtil.feed('index.html/');" href="javascript:void(0);" title=""></a>
+    <a class="ico_gt" href="#" target="_self" title=""></a>
+</div>
+<script type="text/javascript" src="js/onlineService.js"></script>
+<!-- 代码结束 -->
+<div id="header">
+        <div class="banxin">
+           <div class="nav">
+             <h1><a href="#">闲聊</a><img src="img/xyt.jpg" width="40px" height="40px"/></h1>
+                <ul class="item-left">
+                    <li class="item"><a href="#">账号广场</a></li>
+                    <li class="item"><a href="pingtai.html">公共平台</a></li>
+                    <li class="item"><a href="#">轻应用</a></li>
+                    <li class="item"><a href="#">优客YOOC</a></li>
+                    <li class="item"><a href="#"></a>
+                    <a href="shoujiyiban.html">手机社区 <i class="icon-signal"></i></a>
+                    </li>
+                </ul>
+            </div>
+             <div class="grid">
+                <i class="icon-font" title="搜索"></i>
+            <span class="nav-dl">
+                            <a class="zc" href="#">注 册</a>
+                            <a class="load" href="load.html">登 录</a>
+                       </span>     
+                </div>
+           </div>
+    </div>
+    <div class="y-popover" id="search-popover">
+       <div class="y-popover-inner">
+        <form action="" method="get">
+            <input type="text" name="keyword"  placeholder="用户/群组/话题/博文/投票/问卷">
+            <input type="submit" name="tijiao" placeholder="搜索">
+        </form>
+    </div>
+    <i class="icon arrow"><b></b></i>
+</div>
+     <div class="banxin">
+       <div class="ht">
+       <div class="title">
+          <span>一句话证明你是“中国式”吃货</span>
+          <ul>
+            <li>10-08</li>
+            <li>阅读数：205</li>
+          </ul>
+          <div class="dl1">
+             <p>国庆节已经过去，说到节假日，朋友圈纷纷开启了摄影大赛，不是晒美景就是晒美食；日常生活中，我们也总是离不开“吃”这个话题。</p>
+          <p>这几天你是否也是“日胖三斤”的节奏？用一句话证明，你是传说中的“中国式”吃货。</p>
+          <p>要不你以为中国为啥叫china？（chi na）</p>
+          <div class="img1"></div>
+          </div>
+           <div class="dl2">
+             <p>可能全世界这么多大学，只有中国的大学门口才会有小吃一条街吧。</p>
+          <p>作为外来物种，小龙虾在中国颜面扫地，沦落到要靠人工养殖才能活下去。</p>
+          <p>我这辈子，唯一拿得起放不下的，就是筷子了</p>
+          <div class="img2"></div>
+          </div>
+           <div class="dl3">
+             <p>晚上宿舍一人饿醒，全宿舍的人都饿了，翻遍宿舍找不到吃的，超市又关门。没办法我们就把剩下的三包板蓝根冲了，六个人分着喝了。</p>
+          <p>有多少人把奶酪陷阱，看成了奶酪馅饼。</p>
+          <p>之前有个网站说：“国外有个沙滩海蜇泛滥，该怎么办？”中国网友看了很着急：凉拌啊。</p>
+          <div class="img3"></div>
+          </div>
+           <div class="dl4">
+             <p>一篇科学报道说：开曼群岛附近的火山口发现了一种白色盲虾，可以耐热450摄氏度。我的第一反应是：那开水肯定是煮不熟，只能用油炸了吧。</p>
+          <p>在宿舍，钱放在桌子上不会丢，薯片放在桌子上回来就不见了。</p>
+          <p>这个假期，你是不是开启了“逛吃逛吃”的模式？用一句话证明自己是“中国式”吃货吧！</p>
+          <div class="img4"></div>
+          <div class="fx">
+          <span id="share">分享：</span>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          </div>
+       </div>
+       </div>
+     </div>
+<!--评论部分开始-->
+    <div class="liuyan"><a href="javascript:;"><img src="img/pu.png" width:"43px" height:"39px"></a></div>
+    <div class="banxin">
+      <div class="num">全部评论数：<span id="pl">0</span></div>
+      <div class="pinglun"></div>
+    <div class="box" id="box">
+        <label for="txt">请输入内容：</label>
+        <textarea id="txt" cols="30" rows="10" maxlength="200" placeholder="快来说两句吧..."></textarea>
+        <button id="btn">评论</button>
+        <ul id="ul">
+        <li><img src="img/200.jpg" width="40px" height="40px">666<a href=javascript:;>回复</a><span>2016-10-11 22:9:13</span><i>3楼</i></li>
+        <li><img src="img/01.jpg" width="40px" height="40px">顶顶顶顶顶！！！！！<a href=javascript:;>回复</a><span>2016-10-11 09:49:13</span><i>2楼</i></li>
+         <li><img src="img/03.jpg" width="40px" height="40px">言之有理。。。。。<a href=javascript:;>回复</a><span>2016-10-11 00:18:27</span><i>1楼</i></li>
+        </ul>
+    </div>
+    </div>
+	</body>
+</html>

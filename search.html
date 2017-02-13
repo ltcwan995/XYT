@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>校园通</title>
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/search.css" />
+        <link rel="icon" href="favicon.ico"/>
+        <script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+        <script type="text/javascript" src="js/index.js" ></script>
+        <script type="text/javascript" src="js/search.js" ></script>
+    </head>
+    <body ng-app="searchApp" ng-controller="searchCtrl">
+    <div id="header">
+        <div class="banxin">
+           <div class="nav">
+             <h1><a href="#">闲聊</a><img src="img/xyt.jpg" width="40px" height="40px"/></h1>
+                <ul class="item-left">
+                    <li class="item"><a href="#">账号广场</a></li>
+                    <li class="item"><a href="pingtai.html">公共平台</a></li>
+                    <li class="item"><a href="news.html">热聊</a></li>
+                    <li class="item"><a href="#">优客YOOC</a></li>
+                    <li class="item"><a href="#"></a>
+                    <a href="shoujiyiban.html">手机社区 <i class="icon-signal"></i></a>
+                    </li>
+                </ul>
+            </div>
+             <div class="grid">
+                <i class="icon-font" title="搜索"></i>
+            <span class="nav-dl">
+                            <a class="zc" href="#">注 册</a>
+                            <a class="load" href="load.html">登 录</a>
+                            <ul><li class="user"><b><img src="img/User profile.png" width="28px" height="28px"/></b><a class="userName" href="javascript:;">用户</a><div class="logoff"><a href="javascript:;">注销</a></div></li></ul>
+                       </span>     
+                </div>
+           </div>
+    <div class="y-popover" id="search-popover">
+       <div class="y-popover-inner">
+        <form action="search.html">
+            <input type="text" name="keyword"  placeholder="用户/群组/话题/博文/投票/问卷">
+            <input type="submit" class="search" placeholder="搜索">
+        </form>
+    </div>
+    <i class="icon arrow"><b></b></i>
+</div>
+    </div>
+<div class="banxin">
+    <!-- content start -->
+    <h4>搜索相关结果:</h4>
+    <div class="showTip">
+            		抱歉，没有找到您想要的信息，换个方式试试看<img src="img/kulian.jpg" width="20px" height="20px" />
+            	</div>
+    <div id="loading"><span><img src="images/masonry_loading_1.gif"/>努力搜索中，请稍后..</span></div>
+        <div class="content">
+            <div class="banxin">
+                <div class="news detail" ng-repeat="item in data">
+                    <div class="news">
+                        <a href="{{item.href}}"></a>
+                    </div>
+                    <div class="inf">
+                    	<span class="college" ng-bind="item.college"></span>
+                        <a href="#" class="news" ng-bind="item.info"></a><br />
+                        <span class="date" ng-bind="item.date"></span>
+                        <article class="news_price"><a href="#" ng-bind="item.price"></a></article>
+                    </div>
+                </div>
+            </div> 
+<!--footer开始-->
+<footer class="yiban-footer">
+  <div class="container clearfix">
+        <div class="about-yiban">
+                <a href="javascript:;" target="_blank">用户协议</a>
+                <span>|</span>
+                <a href="javascript:;" target="_blank">开放平台</a>
+                <span>|</span>
+                <a href="javascript:;" target="_blank">校园招聘</a>
+                <span>|</span>
+                <a href="javascript:;" target="_blank">社会招聘</a>
+                <span>|</span>
+                <a href="javascript:;">联系我们</a>
+                <span>|</span>
+                <a href="javascript:;" target="_blank">投诉举报</a>
+                <span>|</span>
+                <a href="javascript:;"  target="_blank">客服中心</a>
+        </div>
+      <div class="yiban-Legal clearfix">
+          <p class="copyright" style=" margin-top: 6px;margin-bottom:6px;color: #324f68 !important;font-size:13px !important;">违法和不良信息举报电话：021-60161000    Copyright &copy; 2009-2016 <a href="/">Campus pass</a>. All Rights Reserved.    桂ICP备XXXXXXX号</p>
+          <p class="copyright" style="margin-top:15px;">
+              <a class="jubao" href="images/12377.png" target="_blank" ><img src="images/12377.png" title="中国互联网违法和不良信息举报中心" /></a>
+              <a class="jubao" href="images/jubao.png" target="_blank" ><img src="images/jubao.png" title="网络举报APP下载" /></a>
+              <a class="jubao" href="images/bt_aqwm.jpg" target="_blank" ><img src="images/bt_aqwm.jpg" title="安全文明校园" height="32px" /></a>
+          </p>
+      </div>
+	</div>
+</footer>
+<!--footer结束-->
+        </div> 
+ </div>
+<script type="text/javascript" src="js/angular.min.js" ></script>
+ <script type="text/javascript" src="js/angular-route.min.js" ></script>
+ <script type="text/javascript" src="js/common.js" ></script>
+ <script type="text/javascript" src="js/search.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>校园通</title>
+        <link rel="stylesheet" href="css/todytopics.css" />
+        <link rel="stylesheet" href="css/ly.css" />
+        <link rel="icon" href="favicon.ico" />
+        <script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+        <script type="text/javascript" src="js/todytopics.js" ></script>
+        <script type="text/javascript" src="js/ly.js" ></script>
+        <style type="text/css">
+        body { font-size: 12px; line-height: 120%; text-align: center; color:#333; padding: 20px;}
+        a { color: #333; text-decoration: none;}
+        a:hover { text-decoration: underline;}
+        * { margin: 0; padding: 0; border: none;}
+        .clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden}
+        .clearfix { *height:1%;}
+        #list { margin: 0 auto; text-align: left; width: 540px;}
+        .box { border-top: 1px solid #eee; position: relative;  width: 540px; padding: 20px 0}
+        .box:hover .close { display: block;}
+        .close { display: none; top:0px; right: 0px; width: 28px; height: 28px; border: 1px solid #eee; position: absolute; background: #f2f4f7; line-height: 27px; text-align: center;}
+        .close:hover { background: #c8d2e2; text-decoration: none;}
+        .head { float: left; width: 60px; height: 60px; margin-right: 10px;}
+        .content { float: left; width: 440px;}
+        .comment-text{word-break: break-all;}
+        .main { margin-bottom: 10px;}
+        .txt { margin-bottom: 10px;}
+        .user { color: #369; }
+        .pic { margin-right: 5px; width: 200px; border: 1px solid #eee;}
+        .info { height: 20px; line-height: 19px; font-size: 12px; margin: 0 0 10px 0;}
+        .info .time { color: #ccc; float: left; height: 20px; padding-left: 20px; background: url("images/bg1.jpg") no-repeat left top;}
+        .info .praise { color: #369; float: right; height: 20px; padding-left: 18px; background: url("images/bg2.jpg") no-repeat left top;}
+        .info .praise:hover { text-decoration: underline; background: url("images/bg3.jpg") no-repeat left top;}
+        .praises-total { margin: 0 0 10px 0; height: 20px; background: url("images/praise.png") no-repeat 5px 5px rgb(247, 247, 247); padding: 5px 0 5px 25px; line-height: 19px;}
+        .comment-box { padding: 10px 0; border-top: 1px solid #eee;}
+        .comment-box:hover { background: rgb(247, 247, 247);}
+        .comment-box .myhead { float: left; width: 30px; height: 30px; margin-right: 10px;}
+        .comment-box .comment-content { float: left; width: 400px; }
+        .comment-box .comment-content .comment-time { color: #ccc; margin-top: 3px; line-height: 16px; position: relative;}
+        .comment-box .comment-content .comment-praise { display: none; color: #369; padding-left: 17px; height: 20px; background: url("images/praise.png") no-repeat;  position: absolute; bottom: 0px; right: 44px;}
+        .comment-box .comment-content .comment-operate { display: none; color: #369; height: 20px;  position: absolute; bottom: 0px; right: 10px;}
+        .comment-box .comment-content:hover .comment-praise { display: inline-block;}
+        .comment-box .comment-content:hover .comment-operate { display: inline-block;}
+        .text-box .comment { border: 1px solid #eee; display: block; height: 15px; width: 428px; padding: 5px; resize: none; color: #ccc}
+        .text-box .btn { font-size: 12px; font-weight: bold; display: none; float: right; width: 65px; height: 25px; border: 1px solid #0C528D; color: #fff; background: #4679AC;}
+        .text-box .btn-off { border: 1px solid #ccc; color: #ccc; background: #F7F7F7;}
+        .text-box .word{ display: none; float: right; margin: 7px 10px 0 0; color: #666;}
+        .text-box-on .comment{ height: 50px; color: #333;}
+        .text-box-on .btn{ display: inline;}
+        .text-box-on .word{ display: inline;}
+    </style>
+    </head>
+    <body>
+    <div id="header">
+        <div class="banxin">
+           <div class="nav">
+             <h1><a href="#">校园通</a><img src="img/xyt.jpg" width="40px" height="40px"/></h1>
+                <ul class="item-left">
+                    <li class="item"><a href="#">账号广场</a></li>
+                    <li class="item"><a href="pingtai.html">公共平台</a></li>
+                    <li class="item"><a href="#">轻应用</a></li>
+                    <li class="item"><a href="#">优客YOOC</a></li>
+                    <li class="item"><a href="#"></a>
+                    <a href="shoujiyiban.html">手机社区 <i class="icon-signal"></i></a>
+                    </li>
+                </ul>
+            </div>
+             <div class="grid">
+                <i class="icon-font" title="搜索"></i>
+            <span class="nav-dl">
+                            <a class="zc" href="#">注 册</a>
+                            <a class="load" href="load.html">登 录</a>
+                       </span>     
+                </div>
+           </div>
+    </div>
+    <div class="y-popover" id="search-popover">
+       <div class="y-popover-inner">
+        <form action="" method="get">
+            <input type="text" name="keyword"  placeholder="用户/群组/话题/博文/投票/问卷">
+            <input type="submit" name="tijiao" placeholder="搜索">
+        </form>
+    </div>
+    <i class="icon arrow"><b></b></i>
+</div>
+     <div class="banxin">
+       <div class="ht">
+       <div class="title">
+          <span class="hot">【今日话题】你患上了“单曲循环症”吗？</span>
+          <ul>
+            <li>7小时前</li>
+            <li>阅读数：105</li>
+          </ul>
+          <div class="dl1">
+             <p>有没有一首歌，会让你在某一个情景下，</p>
+          <p>无限循环，不停地听不停地感怀？</p>
+          <div class="img1"></div>
+          </div>
+           <div class="dl2">
+           <div class="topp"><p>说起单曲循环，似乎很多同学都有这一习惯，</p>
+          <p >但听说单曲循环症是一种心理病，</p>
+          <p >真这么可怕？</p></div>
+          </div>
+          <div class="dl2-p">
+             <p class="bt"><h3>情绪共鸣性</h3><img id="one01" src="img/002.png"><span id="one">或许每个人心中都有一首单曲循环，可能是一首歌，也可能是一个人</span></p>
+           <p><h3>单纯喜欢性</h3><img id="two02" src="img/003.png"><span id="two">有那么些人，钟爱单曲循环，并没有那么复杂的理由、那么多外在的影响因素，他们仅仅是单纯地喜欢那么一首歌，哪怕在别人眼里它很一般。</span></p>
+            <p><h3>懒得切歌</h3><img id="three03" src="img/004.png"><span id="three">有些朋友很懒，只是单纯地想放歌，放了歌却又懒的换另一首，你是不是这些人之一呢？</span></p>
+          </div>
+           <div class="dl3">
+            <div class="img3"></div>
+          </div>
+           <div class="dl4">
+          <div class="bottom"><p>总有一首歌，</p>
+          <p >让我们欲罢不能，单曲循环，</p>
+          <p >晒出你手机单曲循环的那首歌吧！</p>
+          <p>总体来说可以概括成 “喜欢+情绪共鸣”。</p>    
+          </div>
+          
+          <div class="fx">
+          <span id="share">分享：</span>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          </div>
+       </div>
+       </div>
+     </div>
+       <div class="topics"><p>热聊话题<br>HOT TOPICS</p>
+          <ul class="IMG">
+          <li><a href="#"><img src="img/top01.jpg"></a></li>
+          <li><a href="#"><img src="img/top02.jpg"></a></li>
+          <li><a href="#"><img src="img/top03.jpg"></a></li>
+          <li><a href="#"><img src="img/top04.jpg"></a></li>
+          <!--<li><a href="#"><img src="img/top03.jpg"></a></li>-->
+          </ul>
+        <ul class="ms">
+            <li><a href="javascript:;">晚上失眠的时候你是怎么过的？<br><span>最幸福的是莫过于睡觉，最痛苦的是莫过于睡不着。</span></a></li>
+            <li><a href="javascript:;">你们学校有哪些奇葩的社团？<br><span>大学里，相信大家参加了不少社团活动吧！那么你们学校最奇葩有趣的社团是哪个呢？</span></a></li>
+            <li><a href="javascript:;">说一说：那些让你哭笑不得的代沟<br><span>从长辈到小辈，让你最哭笑不得的代沟是什么？</span></a></li>
+            <li><a href="javascript:;">大学英语四六级将取消？<br><span>今天来聊聊你对大学英语能力等级考试的看法！英语考试需要改革么？</span></a></li>
+            <li><a href="javascript:;">你身边有这样的朋友吗？<br><span>吃货、迟到、爱自拍......你身边有这样的朋友吗？</span></a></li>
+        </ul>
+    </div>
+    <!--评论开始-->
+    <div id="list">
+        <div class="box clearfix">
+            <a class="close" href="javascript:;">×</a>
+            <img class="head" src="images/img2.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">Andy：</span>总有那么几首令人难以忘怀，又喜欢的无法自拔的经典歌曲，I like music,DJ嗨起来。
+                    </p>
+                    <img class="pic" src="images/Music.jpg" alt=""/>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">02-14 23:01</span>
+                    <a class="praise" href="javascript:;">赞</a>
+                </div>
+                <div class="praises-total" total="4" style="display: block;">4个人觉得很赞</div>
+                <div class="comment-list">
+                    <div class="comment-box clearfix" user="self">
+                        <img class="myhead" src="images/7.jpg" alt=""/>
+                        <div class="comment-content">
+                            <p class="comment-text"><span class="user">我：</span>写的太好了。</p>
+                            <p class="comment-time">
+                                2014-02-19 14:36
+                                <a href="javascript:;" class="comment-praise" total="1" my="0" style="display: inline-block">1 赞</a>
+                                <a href="javascript:;" class="comment-operate">删除</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <textarea class="comment" autocomplete="off">评论…</textarea>
+                    <button class="btn ">回 复</button>
+                    <span class="word"><span class="length">0</span>/140</span>
+                </div>
+            </div>
+        </div>
+        <div class="box clearfix">
+            <a class="close" href="javascript:;">×</a>
+            <img class="head" src="images/img2.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">人在旅途：</span>音乐如潮水一般给人带来心灵的震撼，爱如潮水
+                    </p>
+                    <img class="pic" src="images/img5.jpg" alt=""/>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">02-14 23:01</span>
+                    <a class="praise" href="javascript:;">赞</a>
+                </div>
+                <div class="praises-total" total="0" style="display: none;"></div>
+                <div class="comment-list">
+                    <div class="comment-box clearfix" user="other">
+                        <img class="myhead" src="images/4.jpg" alt=""/>
+                        <div class="comment-content">
+                            <p class="comment-text"><span class="user">老鹰：</span>我也想去三亚。</p>
+                            <p class="comment-time">
+                                2014-02-19 14:36
+                                <a href="javascript:;" class="comment-praise" total="0" my="0">赞</a>
+                                <a href="javascript:;" class="comment-operate">回复</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <textarea class="comment" autocomplete="off">评论…</textarea>
+                    <button class="btn ">回 复</button>
+                    <span class="word"><span class="length">0</span>/140</span>
+                </div>
+            </div>
+        </div>
+        <div class="box clearfix">
+            <a class="close" href="javascript:;">×</a>
+            <img class="head" src="images/3.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">小Y：</span>音乐可以分为声乐和器乐两大类型，又可以粗略的分为古典音乐、民间音乐、原生态音乐、现代音乐（包括流行音乐）等。在艺术类型中，音乐是比较抽象的艺术，音乐从历史发展上可分为东方音乐和西方音乐。</p>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">02-11 13:17</span>
+                    <a class="praise" href="javascript:;">赞</a>
+                </div>
+                <div class="praises-total" total="0" style="display: none;"></div>
+                <div class="comment-list">
+
+                </div>
+                <div class="text-box">
+                    <textarea class="comment" autocomplete="off">评论…</textarea>
+                    <button class="btn ">回 复</button>
+                    <span class="word"><span class="length">0</span>/140</span>
+                </div>
+            </div>
+        </div>
+         <div class="box clearfix">
+            <a class="close" href="javascript:;">×</a>
+            <img class="head" src="images/3.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">小Y：</span>英国艺术家 Jane Perkins 能利用很多不起眼的东西进行创作，甚至是垃圾。首饰、纽扣、玩具等等都可以作为他创作的工具并创作出惟妙惟肖的画作，丝毫不逊色于色彩丰富的颜料。
+                    </p>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">02-11 13:17</span>
+                    <a class="praise" href="javascript:;">赞</a>
+                </div>
+                <div class="praises-total" total="0" style="display: none;"></div>
+                <div class="comment-list">
+
+                </div>
+                <div class="text-box">
+                    <textarea class="comment" autocomplete="off">评论…</textarea>
+                    <button class="btn ">回 复</button>
+                    <span class="word"><span class="length">0</span>/140</span>
+                </div>
+            </div>
+        </div>
+        <div class="box clearfix">
+            <a class="close" href="javascript:;">×</a>
+            <img class="head" src="images/img2.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">人在旅途：</span>音乐如潮水一般给人带来心灵的震撼，爱如潮水
+                    </p>
+                    <img class="pic" src="images/img5.jpg" alt=""/>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">02-14 23:01</span>
+                    <a class="praise" href="javascript:;">赞</a>
+                </div>
+                <div class="praises-total" total="0" style="display: none;"></div>
+                <div class="comment-list">
+                    <div class="comment-box clearfix" user="other">
+                        <img class="myhead" src="images/4.jpg" alt=""/>
+                        <div class="comment-content">
+                            <p class="comment-text"><span class="user">老鹰：</span>我也想去三亚。</p>
+                            <p class="comment-time">
+                                2014-02-19 14:36
+                                <a href="javascript:;" class="comment-praise" total="0" my="0">赞</a>
+                                <a href="javascript:;" class="comment-operate">回复</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <textarea class="comment" autocomplete="off">评论…</textarea>
+                    <button class="btn ">回 复</button>
+                    <span class="word"><span class="length">0</span>/140</span>
+                </div>
+            </div>
+        </div>
+        <div class="box clearfix">
+            <a class="close" href="javascript:;">×</a>
+            <img class="head" src="images/img2.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">Andy：</span>总有那么几首令人难以忘怀，又喜欢的无法自拔的经典歌曲，I like music,DJ嗨起来。
+                    </p>
+                    <img class="pic" src="images/Music.jpg" alt=""/>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">02-14 23:01</span>
+                    <a class="praise" href="javascript:;">赞</a>
+                </div>
+                <div class="praises-total" total="4" style="display: block;">5个人觉得很赞</div>
+                <div class="comment-list">
+                    <div class="comment-box clearfix" user="self">
+                        <img class="myhead" src="images/7.jpg" alt=""/>
+                        <div class="comment-content">
+                            <p class="comment-text"><span class="user">我：</span>写的太好了。</p>
+                            <p class="comment-time">
+                                2014-02-19 14:36
+                                <a href="javascript:;" class="comment-praise" total="1" my="0" style="display: inline-block">1 赞</a>
+                                <a href="javascript:;" class="comment-operate">删除</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <textarea class="comment" autocomplete="off">评论…</textarea>
+                    <button class="btn ">回 复</button>
+                    <span class="word"><span class="length">0</span>/140</span>
+                </div>
+            </div>
+        </div>
+        <div class="box clearfix">
+            <a class="close" href="javascript:;">×</a>
+            <img class="head" src="images/img2.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">Andy：</span>总有那么几首令人难以忘怀，又喜欢的无法自拔的经典歌曲，I like music,DJ嗨起来。
+                    </p>
+                    <img class="pic" src="images/Music.jpg" alt=""/>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">02-14 23:01</span>
+                    <a class="praise" href="javascript:;">赞</a>
+                </div>
+                <div class="praises-total" total="4" style="display: block;">4个人觉得很赞</div>
+                <div class="comment-list">
+                    <div class="comment-box clearfix" user="self">
+                        <img class="myhead" src="images/7.jpg" alt=""/>
+                        <div class="comment-content">
+                            <p class="comment-text"><span class="user">我：</span>写的太好了。</p>
+                            <p class="comment-time">
+                                2014-02-19 14:36
+                                <a href="javascript:;" class="comment-praise" total="1" my="0" style="display: inline-block">1 赞</a>
+                                <a href="javascript:;" class="comment-operate">删除</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <textarea class="comment" autocomplete="off">评论…</textarea>
+                    <button class="btn ">回 复</button>
+                    <span class="word"><span class="length">0</span>/140</span>
+                </div>
+            </div>
+        </div>
+        <div class="box clearfix">
+            <a class="close" href="javascript:;">×</a>
+            <img class="head" src="images/img2.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">Andy：</span>总有那么几首令人难以忘怀，又喜欢的无法自拔的经典歌曲，I like music,DJ嗨起来。
+                    </p>
+                    <img class="pic" src="images/Music.jpg" alt=""/>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">02-14 23:01</span>
+                    <a class="praise" href="javascript:;">赞</a>
+                </div>
+                <div class="praises-total" total="4" style="display: block;">4个人觉得很赞</div>
+                <div class="comment-list">
+                    <div class="comment-box clearfix" user="self">
+                        <img class="myhead" src="images/7.jpg" alt=""/>
+                        <div class="comment-content">
+                            <p class="comment-text"><span class="user">我：</span>写的太好了。</p>
+                            <p class="comment-time">
+                                2014-02-19 14:36
+                                <a href="javascript:;" class="comment-praise" total="1" my="0" style="display: inline-block">1 赞</a>
+                                <a href="javascript:;" class="comment-operate">删除</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <textarea class="comment" autocomplete="off">评论…</textarea>
+                    <button class="btn ">回 复</button>
+                    <span class="word"><span class="length">0</span>/140</span>
+                </div>
+            </div>
+        </div>
+        <div class="box clearfix">
+            <a class="close" href="javascript:;">×</a>
+            <img class="head" src="images/3.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">小Y：</span>英国艺术家 Jane Perkins 能利用很多不起眼的东西进行创作，甚至是垃圾。首饰、纽扣、玩具等等都可以作为他创作的工具并创作出惟妙惟肖的画作，丝毫不逊色于色彩丰富的颜料。
+                    </p>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">02-11 13:17</span>
+                    <a class="praise" href="javascript:;">赞</a>
+                </div>
+                <div class="praises-total" total="0" style="display: none;"></div>
+                <div class="comment-list">
+
+                </div>
+                <div class="text-box">
+                    <textarea class="comment" autocomplete="off">评论…</textarea>
+                    <button class="btn ">回 复</button>
+                    <span class="word"><span class="length">0</span>/140</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+   
+<!--footer开始-->
+<footer class="yiban-footer">
+  <div class="container clearfix">
+        <div class="about-yiban">
+                <a href="javascript:;" target="_blank">用户协议</a>
+                <span>|</span>
+                <a href="javascript:;" target="_blank">开放平台</a>
+                <span>|</span>
+                <a href="javascript:;" target="_blank">校园招聘</a>
+                <span>|</span>
+                <a href="javascript:;" target="_blank">社会招聘</a>
+                <span>|</span>
+                <a href="javascript:;">联系我们</a>
+                <span>|</span>
+                <a href="javascript:;" target="_blank">投诉举报</a>
+                <span>|</span>
+                <a href="javascript:;"  target="_blank">客服中心</a>
+        </div>
+      <div class="yiban-Legal clearfix">
+          <p class="copyright" style=" margin-top: 6px;margin-bottom:6px;color: #324f68 !important;font-size:13px !important;">违法和不良信息举报电话：021-60161000    Copyright &copy; 2009-2016 <a href="/">Campus pass</a>. All Rights Reserved.    桂ICP备15046059号-6</p>
+          <p class="copyright" style="margin-top:15px;">
+              <a class="jubao" href="images/12377.png" target="_blank" ><img src="images/12377.png" title="中国互联网违法和不良信息举报中心" /></a>
+              <a class="jubao" href="images/jubao.png" target="_blank" ><img src="images/jubao.png" title="网络举报APP下载" /></a>
+              <a class="jubao" href="images/bt_aqwm.jpg" target="_blank" ><img src="images/bt_aqwm.jpg" title="安全文明校园" height="32px" /></a>
+          </p>
+      </div>
+	</div>
+</footer>
+<!--footer结束-->
+    </body>
+</html>

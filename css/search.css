@@ -1,0 +1,72 @@
+a{
+	text-decoration: none;
+	color: rgb(50, 79, 104)
+}
+.content{
+	position: relative;
+	top: 300px;
+	min-height:200px;
+	display: none;
+}
+h4{
+	position: relative;
+	top:250px;
+}
+.detail{
+margin:20px;
+}
+.inf:hover{
+	background: #f6f6f6;
+}
+.inf .news{
+	font-size: 16px;
+    font-family: "微软雅黑",Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    color: #333;
+    display: inline-block;
+}
+.inf .news:hover{
+	color: skyblue;
+}
+.inf .college{
+	color: #ff4e33;
+	font-size: 16px;
+    font-family: "微软雅黑",Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    display: inline-block;
+}
+.date{
+	font-size: 12px;
+    font-family: SinSum;
+    color: #999;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 12px;
+    margin-left: 15px;
+}
+.news_price a{
+	line-height: inherit;
+    overflow: hidden;
+    width: 100%;
+    font-size:16px;
+    font-family: "微软雅黑",Arial,Helvetica,sans-serif;
+    color: #666;
+}
+.showTip{
+	position: relative;
+	top:450px;
+	left: 350px;
+	display: none;
+}
+footer{
+	position: relative;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+    padding: 15px 0 30px;
+    margin-top:150px;
+}
+#loading{
+	position: relative;
+	top:400px;
+	left: 350px;
+}
